@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
+import './App.css';
+import X from "./Component/Navbar/Navbar";
+import images from "./images.jpg";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      <X />
+      <div style={{ border: 'solid 1px black', maxWidth: '100vw' }}>
+        <h1 className="titleRed">AAbd lahmid </h1>
+      </div>
+      <div className="images">
+      <img src={images} alt="images"></img>
+        <img src="./image.png" alt="png"></img></div>
+        <iframe title="vid" width="560" height="315" src="https://www.youtube.com/embed/oDb0-snBvLE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
+    
   );
 }
+
+
+
+
+
+
 
 export default App;
